@@ -18,7 +18,7 @@ setInterval(function(){
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500-characterTop);
     if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
-        alert("You were contaminated with virus.  Vaccination Score: "+(counter-1));
+        alert("Congratulations! You saved "+(counter-1)" lives");
         character.style.top = 100 + "px";
         counter=0;
     }
