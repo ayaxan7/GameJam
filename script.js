@@ -19,7 +19,7 @@ setInterval(function(){
     var cTop = -(500-characterTop);
     if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
         alert("Congratulations! You helped India file " +(counter-1) +" ITR's");
-        character.style.top = 100 + "px";
+        character.style.top = 100 + "px"; 
         counter=0;
     }
 },10);
