@@ -40,3 +40,10 @@ function jump(){
         jumpCount++;
     },10);
 }
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space' || event.code === 'ArrowUp' || event.code === 'KeyW') {
+        if(jumping == 0) {
+            jump();
+        }
+    }
+});
